@@ -1,0 +1,39 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      // Add new colors
+      colors: {
+        navbg: "#F2F2F2",
+        gry: "#5C5C5C",
+        gry2: "#F1F3F5",
+        lightgreen: "#EFFFF4",
+      },
+      fontFamily: {
+        ibm: ["IBM Plex Sans", "sans-serif"],
+      },
+      screens: {
+        "2xl": { max: "1535px" },
+        // => @media (max-width: 1535px) { ... }
+
+        "1.5xl": { max: "1399px" },
+        // => @media (max-width: 1399px) { ... }
+        xl: { max: "1279px" },
+        // => @media (max-width: 1279px) { ... }
+
+        lg: { max: "1023px" },
+        // => @media (max-width: 1023px) { ... }
+
+        md: { max: "767px" },
+        // => @media (max-width: 767px) { ... }
+
+        sm: { max: "639px" },
+        // => @media (max-width: 639px) { ... }
+        xs: { max: "479px" },
+        // => @media (max-width: 479px) { ... }
+      },
+    },
+  },
+  plugins: [],
+};
